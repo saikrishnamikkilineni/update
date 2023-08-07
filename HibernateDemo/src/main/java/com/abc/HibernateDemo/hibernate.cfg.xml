@@ -1,0 +1,15 @@
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/db2</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<property name="hibernate.show_sql">true</property>
+		<mapping class="com.abc.HibernateDemo.model.Employee" />
+	</session-factory>
+
+</hibernate-configuration>  
